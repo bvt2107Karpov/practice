@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
   font-family: Courier;
   src: url(https://allfont.ru/allfont.css?fonts=courier)
@@ -128,7 +129,7 @@ body, header, main, footer {
   position: absolute;
   height: 32px;
   width: 32px;
-  margin-left: -140px;
+  margin-left: -155px;
   top: -5px;
   z-index: 10;
 }
@@ -137,7 +138,7 @@ body, header, main, footer {
   position: absolute;
   height: 32px;
   width: 32px;
-  margin-left: -10px;
+  margin-left: -20px;
   top: -5px;
   z-index: 10;
 }
@@ -155,7 +156,7 @@ body, header, main, footer {
   position: absolute;
   height: 32px;
   width: 32px;
-  margin-left: 275px;
+  margin-left: 285px;
   top: 2px;
   z-index: 10;
 }
@@ -217,15 +218,75 @@ img {
   }
 
  
-.txt{
+.txt_home{
     position: absolute;
-    top: 350px;
-    left: 55%;
-    font-size: 32px;
+    top: 300px;
+    left: 50%;
     font-weight: 540;
     font-family: Georgia;
-    color: #0000cc, #99ccff ;
     z-index: 9;
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: #2E2F45;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 7px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+}
+
+.txt_author{
+  position: absolute;
+  top: 1090px;
+  left: 250px;
+  font-family: 'Rubik One', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  background: #2E2F45;
+  display: table;
+  margin: 20px auto;
+  color: white;
+  border-radius: 7px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px;
+}
+
+.txt_author_1{
+  position: absolute;
+  top: 1140px;
+  left: 650px;
+  font-family: 'Rubik One', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  background: #2E2F45;
+  display: table;
+  margin: 20px auto;
+  color: white;
+  border-radius: 7px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px;
+}
+
+.txt_contacts{
+  position: absolute;
+  top: 350px;
+  left: 55%;
+  font-size: 32px;
+  font-weight: 540;
+  font-family: Georgia;
+  z-index: 9;
+}
+
+.txt_fans{
+  position: absolute;
+  top: 350px;
+  left: 55%;
+  font-size: 32px;
+  font-weight: 540;
+  font-family:Impact, sans-serif;
+  z-index: 9;
 }
 
 .Home_WebDeveloper{
@@ -240,6 +301,73 @@ img {
     border-radius: 20%;
 }
 
+
+.school{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: 150px;
+  top: 1190px;
+}
+
+.school_txt{
+  position: absolute;
+  top: 378px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 550;
+  padding: 20px;
+  letter-spacing: 0.2em;
+  border: 3px solid;
+  border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
+  border-image-slice: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.academy{
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  left: 700px;
+  top: 1170px;
+}
+
+.academy_txt{
+  position: absolute;
+  top: 400px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 550;
+  padding: 20px;
+  letter-spacing: 0.2em;
+  border: 3px solid;
+  border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
+  border-image-slice: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.university{
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  left: 1300px;
+  top: 1170px;
+}
+
+.university_txt{
+  position: absolute;
+  top: 400px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 550;
+  padding: 20px;
+  letter-spacing: 0.2em;
+  border: 3px solid;
+  border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
+  border-image-slice: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .top_button{
   position: fixed;
   width: 50px;
@@ -247,12 +375,15 @@ img {
   background: #2f91ee;
   text-align: center;
   padding: 10px;
-  bottom: 135px;
-  right: 50px;
+  bottom: 590px;
+  right: 30px;
   cursor: pointer;
   color: rgb(0, 0, 0);
   font-size: 30px;
-  border-radius: 20%;
+  background: linear-gradient(135deg, #c5ebe8 20%, #042ea1 70%);
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, #042ea1 20%, #c5ebe8 70%);
+  border-image-slice: 1;
 }
 
 
@@ -263,15 +394,83 @@ img {
   background: #2f91ee;
   text-align: center;
   padding: 10px;
-  bottom: 70px;
-  right: 50px;
+  bottom: 510px;
+  right: 30px;
   cursor: pointer;
   color: rgb(0, 0, 0);
   font-size: 30px;
+  background: linear-gradient(135deg, #c5ebe8 20%, #042ea1 70%);
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, #042ea1 20%, #c5ebe8 70%);
+  border-image-slice: 1;
+}
+
+
+body {
+  background: #d6eaf8;
+}
+.school_button {
+  position:absolute;
+  top: 1720px;
+  left: 230px; 
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
   border-radius: 10px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.school_button:hover {
+  background-position: right center;
+}
+.academy_button {
+  position:absolute;
+  top: 1800px;
+  left: 815px; 
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.academy_button:hover {
+  background-position: right center;
+}
+.university_button {
+  position:absolute;
+  top: 1750px;
+  left: 1420px; 
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.university_button:hover {
+  background-position: right center;
 }
 
 /*
