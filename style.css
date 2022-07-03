@@ -106,6 +106,22 @@ body, header, main, footer {
   border-image-slice: 1;
 }
 
+.bottom_button{
+  position: fixed;
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+  bottom: 4vh;
+  right: 1vw;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  border: 3px solid ;
+  background: linear-gradient(135deg, #5280e4 20%, #091a49 70%);
+  border-image: linear-gradient(135deg, #091a49 20%, #5280e4 70%);
+  border-image-slice: 1;
+}
+
 
 .header-bg{
   position: fixed;
@@ -114,7 +130,7 @@ body, header, main, footer {
   width: 100vw;
   height: 7vh;
   background: rgb(10, 5, 32);
-  z-index: 10;
+  z-index: 15;
 }
 
 .social_VK{
@@ -467,4 +483,165 @@ body {
 .university_button:hover {
   background-position: right center;
 }
+
+
+.txt_contacts{
+  position: relative;
+  top: -100vh;
+  left: 0vw;
+  font-family: 'Rubik One', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  background: #2E2F45;
+  display: table;
+  margin: 20px auto;
+  color: white;
+  border-radius: 7px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px;
+}
+
+.txt_contacts1{
+  position: relative;
+  top: -101vh;
+  left: 0vw;
+  font-family: 'Rubik One', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: #2E2F45;
+  display: table;
+  margin: 20px auto;
+  color: white;
+  border-radius: 7px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px;
+}
+
+.copyright_text{
+  position: relative;
+  width: 455px;
+  height: 28px;
+  left: 733px;
+  top: -118vh;
+  text-align: center;
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.tel{
+  position: relative;
+  width: 100vw;
+  left: 9vw; 
+  top: -80vh;
+  margin-top: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 10;
+}
+
+.icon_phone{
+  position: relative;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  left: 51vw;
+  top: -86.5vh;
+  margin-top: 0%;
+  z-index: 10;
+}
+
+.email{
+  position: relative;
+  width: 100vw;
+  height: 134px;
+  left: 53.5vw; 
+  top: -80vh;
+  margin-top: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 10;
+}
+
+.icon_mail{
+  position: relative;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  left: 51vw;
+  top: -84.5vh;
+  margin-top: 0%;
+  z-index: 10;
+}
+
+.adress{
+  position: relative;
+  width: 100vw;
+  height: 133px;
+  left: 13vw; 
+  top: -80vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 10;
+
+}
+
+.icon_adress{
+  position: relative;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  left: 51vw;
+  top: -96vh;
+  margin-top: 0%;
+  z-index: 10;
+}
+
+.form_post {
+  position: relative;
+  top: -130vh;
+  left: -20vw; 
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #810e9e 0%, #234a7c 51%, #810e9e 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+.google_map{
+  position: relative;
+  border:0; 
+  top: -135vh;
+  left: 2vw;
+  border: 3px solid black
+}
+
 
