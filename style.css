@@ -57,7 +57,7 @@ body, header, main, footer {
 
 /* скроллбар */
 ::-webkit-scrollbar {
-  width: 24px; /* ширина для вертикального скролла */
+  width: 24px;
   background-color: #195292;
 }
 
@@ -89,6 +89,7 @@ body, header, main, footer {
   background-color: #1d0f6e;
 }
 
+/* Кнопка навигации вверх */
 
 .top_button{
   position: fixed;
@@ -106,6 +107,8 @@ body, header, main, footer {
   border-image-slice: 1;
 }
 
+/* Кнопка навигации вниз */
+
 .bottom_button{
   position: fixed;
   width: 50px;
@@ -122,6 +125,7 @@ body, header, main, footer {
   border-image-slice: 1;
 }
 
+/* header */
 
 .header-bg{
   position: fixed;
@@ -132,6 +136,8 @@ body, header, main, footer {
   background: rgb(10, 5, 32);
   z-index: 15;
 }
+
+/* Иконки соц сетей */
 
 .social_VK{
     position: relative;
@@ -181,6 +187,7 @@ body, header, main, footer {
     z-index: 10;
 }
 
+/* Меню навигации */
 
 .menu{
   position: relative;
@@ -190,6 +197,8 @@ body, header, main, footer {
   word-spacing: 100px;
   z-index: 10;
 }
+
+/* Иконки для меню навигации требуют доработку */
 
 /*
 .menu1{
@@ -226,13 +235,10 @@ body, header, main, footer {
   margin-left: 285px;
   top: 2px;
   z-index: 10;
-}
-*/
-
-/*.foter{
-
 } */
 
+
+/* Фоны */
 
 div.background {
     position: relative;
@@ -284,6 +290,7 @@ img {
     max-width: 100%;
   }
 
+/* Текст для раздела Home */
  
 .txt_home{
     position: absolute;
@@ -303,6 +310,8 @@ img {
     mix-blend-mode: multiply;
     padding: 5px 10px;
 }
+
+/* Текст для раздела Home */
 
 .txt_author{
   position: absolute;
@@ -336,6 +345,8 @@ img {
   padding: 5px 10px;
 }
 
+/* Картинка для раздела Home */
+
 .Home_WebDeveloper{
     position: absolute;
     min-width: 40%;
@@ -348,6 +359,7 @@ img {
     border-radius: 20%;
 }
 
+/* Картинка и текст для школы */
 
 .school{
   position: absolute;
@@ -370,6 +382,8 @@ img {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Картинка и текст для академии */
+
 .academy{
   position: absolute;
   height: 450px;
@@ -390,6 +404,8 @@ img {
   border-image-slice: 1;
   font-family: 'Courier New', Courier, monospace;
 }
+
+/* Картинка и текст для универа */
 
 .university{
   position: absolute;
@@ -416,6 +432,9 @@ img {
 body {
   background: #d6eaf8;
 }
+
+/* Кнопка к школе */
+
 .school_button {
   position:absolute;
   top: 175vh;
@@ -438,6 +457,7 @@ body {
   background-position: right center;
 }
 
+/* Кнопка к академии */
 
 .academy_button {
   position:absolute;
@@ -461,6 +481,7 @@ body {
   background-position: right center;
 }
 
+/* Кнопка к универу */
 
 .university_button {
   position:absolute;
@@ -484,6 +505,7 @@ body {
   background-position: right center;
 }
 
+/* Текст к разделу Contacts */
 
 .txt_contacts{
   position: relative;
@@ -517,6 +539,8 @@ body {
   padding: 5px 10px;
 }
 
+/* Текст footer'a */
+
 .copyright_text{
   position: relative;
   width: 455px;
@@ -533,6 +557,7 @@ body {
   color: #FFFFFF;
 }
 
+/* Телефон */
 
 .tel{
   position: relative;
@@ -550,6 +575,8 @@ body {
   z-index: 10;
 }
 
+/* Иконка телефона */
+
 .icon_phone{
   position: relative;
   font-size: 14px;
@@ -560,6 +587,8 @@ body {
   margin-top: 0%;
   z-index: 10;
 }
+
+/* Почта */
 
 .email{
   position: relative;
@@ -578,6 +607,8 @@ body {
   z-index: 10;
 }
 
+/* Иконка почты */
+
 .icon_mail{
   position: relative;
   font-size: 14px;
@@ -588,6 +619,8 @@ body {
   margin-top: 0%;
   z-index: 10;
 }
+
+/* Адрес */
 
 .adress{
   position: relative;
@@ -606,6 +639,8 @@ body {
 
 }
 
+/* Иконка адреса */
+
 .icon_adress{
   position: relative;
   font-size: 14px;
@@ -616,6 +651,8 @@ body {
   margin-top: 0%;
   z-index: 10;
 }
+
+/* Кнопка feedback'a */
 
 .form_post {
   position: relative;
@@ -635,6 +672,8 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
   transition: .5s;
 }
+
+/* Googla map */
 
 .google_map{
   position: relative;
