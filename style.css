@@ -1,250 +1,85 @@
-*,*:before,*:after{
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+A {
+    text-decoration: none;
+    color: white;
+} 
+
+A:hover { 
+    text-decoration: underline;
+    color: rgb(13, 167, 206);
 }
-
-
-@font-face {
-  font-family: Courier;
-  src: url(https://allfont.ru/allfont.css?fonts=courier)
-
-}
-
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-
-nav,footer,header,aside{display: block;}
-
-
-html,body{
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    overflow-x: none;
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica", sans-serif;
-}
-
-
-input,button,textarea{font-family: inherit;}
-
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-
-
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
-
-
-body, header, main, footer {
-    margin: 0;
-    padding: 0;
-}
-
 
 /* скроллбар */
 ::-webkit-scrollbar {
-  width: 24px;
-  background-color: #195292;
+    width: 24px;
+    background-color: #195292;
+  }
+  
+  /* ползунок */
+  ::-webkit-scrollbar-thumb {
+    background-color: #1d0f6e;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #000307;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #213257;
+  }
+  
+  /* Стрелки */
+  
+  ::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(240deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(0deg, #195292 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #1d0f6e;
+  }
+  
+  ::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #195292 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #1d0f6e;
+  }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
-/* ползунок */
-::-webkit-scrollbar-thumb {
-  background-color: #1d0f6e;
-  border-radius: 9em;
-  box-shadow: inset 1px 1px 10px #000307;
+main {
+    margin: 0 auto;
+    max-width: 80ch;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #213257;
-}
-
-/* Стрелки */
-
-::-webkit-scrollbar-button:vertical:start:decrement {
-  background: linear-gradient(120deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
-      linear-gradient(240deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
-      linear-gradient(0deg, #195292 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #1d0f6e;
-}
-
-::-webkit-scrollbar-button:vertical:end:increment {
-  background:
-      linear-gradient(300deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
-      linear-gradient(60deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
-      linear-gradient(180deg, #195292 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #1d0f6e;
-}
-
-/* Кнопка навигации вверх */
-
-.top_button{
-  position: fixed;
-  width: 50px;
-  text-align: center;
-  padding: 10px;
-  bottom: 10vh;
-  right: 1vw;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  border: 3px solid ;
-  background: linear-gradient(135deg, #5280e4 20%, #091a49 70%);
-  border-image: linear-gradient(135deg, #091a49 20%, #5280e4 70%);
-  border-image-slice: 1;
-}
-
-/* Кнопка навигации вниз */
-
-.bottom_button{
-  position: fixed;
-  width: 50px;
-  text-align: center;
-  padding: 10px;
-  bottom: 4vh;
-  right: 1vw;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  border: 3px solid ;
-  background: linear-gradient(135deg, #5280e4 20%, #091a49 70%);
-  border-image: linear-gradient(135deg, #091a49 20%, #5280e4 70%);
-  border-image-slice: 1;
-}
-
-/* header */
 
 .header-bg{
-  position: fixed;
-  min-width: 100%;
-  max-width: none;
-  width: 100vw;
-  height: 7vh;
-  background: rgb(10, 5, 32);
-  z-index: 15;
+    position: fixed;
+    min-width: 100%;
+    max-width: none;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 7vh;
+    background: rgb(10, 5, 32);
+    z-index: 15;
+  }
+
+.navigation-menu{
+    text-align: center;
+    font-size: 26px;
+    word-spacing: 180px;
+    margin-top: 2vh;
 }
-
-/* Иконки соц сетей */
-
-.social_VK{
-    position: relative;
-    font-size: 14px;
-    width: 29px;
-    height: 29px;
-    left: 81vw;
-    top: 1.6vh;
-    margin-top: 0%;
-    z-index: 10;
-}
-
-
-.social_Git{
-    position: relative;
-    font-size: 14px;
-    width: 29px;
-    height: 29px;
-    left: 85vw;
-    top: -2.7vh;
-    margin-top: 0%;
-    z-index: 10;
-
-}
-
-
-.social_Telegram{
-    position: relative;
-    font-size: 14px;
-    width: 29px;
-    height: 29px;
-    left: 89vw;
-    top: -6.7vh;
-    margin-top: 0%;
-    z-index: 10;
-}
-
-
-.social_Inst{
-    position: relative;
-    font-size: 14px;
-    width: 29px;
-    height: 29px;
-    left: 93vw;
-    top: -11vh;
-    margin-top: 0%;
-    z-index: 10;
-}
-
-/* Меню навигации */
-
-.menu{
-  position: relative;
-  top: -15vh;
-  left: 20vw;
-  font-size: 20px;
-  word-spacing: 100px;
-  z-index: 10;
-}
-
-/* Иконки для меню навигации требуют доработку */
-
-/*
-.menu1{
-  position: relative;
-  height: 32px;
-  width: 32px;
-  margin-left: -155px;
-  top: -5px;
-  z-index: 10;
-}
-
-.menu2{
-  position: relative;
-  height: 32px;
-  width: 32px;
-  margin-left: -20px;
-  top: -5px;
-  z-index: 10;
-}
-
-.menu3{
-  position: relative;
-  height: 32px;
-  width: 32px;
-  margin-left: 123px;
-  top: 2px;
-  z-index: 10;
-}
-
-.menu4{
-  position: relative;
-  height: 32px;
-  width: 32px;
-  margin-left: 285px;
-  top: 2px;
-  z-index: 10;
-} */
-
 
 /* Фоны */
 
 div.background {
     position: relative;
     top: 0vh;
-    left: 0vw;
-    width: 100vw;
+    right: 100%;
+    width: 295.5%;
     height: 100vh;
     z-index: -1;
   }
@@ -253,29 +88,29 @@ div.background {
 div.background_l2 {
     position: relative;
     top: 0vh;
-    left: 0vw;
-    width: 100vw;
+    right: 100%;
+    width: 295.5%;
     height: 100vh;
     z-index: -2;
-  }
+}
 
-  div.background_l3 {
+div.background_l3 {
     position: relative;
     top: -1vh;
-    left: 0vw;
-    width: 100vw;
+    right: 100%;
+    width: 295.5%;
     height: 100vh;
     z-index: -3;
-  }
+}
 
-  div.background_l4 {
+div.background_l4 {
     position: relative;
     top: -1vh;
-    left: 0vw;
-    width: 100vw;
+    right: 100%;
+    width: 295.5%;
     height: 105vh;
     z-index: -4;
-  } 
+} 
 
 
 img {
@@ -288,7 +123,21 @@ img {
     min-width: 100%;
     min-height: 100%;
     max-width: 100%;
-  }
+}
+
+/* Картинка для раздела Home */
+
+.Home_WebDeveloper{
+    position: absolute;
+    min-width: 40%;
+    min-height: 40%;
+    margin-top: 200px;
+    margin-left: 5vw;
+    height: 30%;
+    width: 30%;
+    z-index: 9;
+    border-radius: 20%;
+}
 
 /* Текст для раздела Home */
  
@@ -311,376 +160,442 @@ img {
     padding: 5px 10px;
 }
 
-/* Текст для раздела Home */
+/* Текст для раздела Author */
 
 .txt_author{
-  position: absolute;
-  top: 108vh;
-  left: 15vw;
-  font-family: 'Rubik One', sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  background: #2E2F45;
-  display: table;
-  margin: 20px auto;
-  color: white;
-  border-radius: 7px;
-  mix-blend-mode: multiply;
-  padding: 5px 10px;
-}
-
-.txt_author_1{
-  position: absolute;
-  top: 112vh;
-  left: 35vw;
-  font-family: 'Rubik One', sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  background: #2E2F45;
-  display: table;
-  margin: 20px auto;
-  color: white;
-  border-radius: 7px;
-  mix-blend-mode: multiply;
-  padding: 5px 10px;
-}
-
-/* Картинка для раздела Home */
-
-.Home_WebDeveloper{
     position: absolute;
-    min-width: 40%;
-    min-height: 40%;
-    margin-top: 200px;
-    margin-left: 5vw;
-    height: 30%;
-    width: 30%;
-    z-index: 9;
-    border-radius: 20%;
-}
+    top: 108vh;
+    left: 15vw;
+    font-family: 'Rubik One', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    background: #2E2F45;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 7px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+  }
+  
+  .txt_author_1{
+    position: absolute;
+    top: 112vh;
+    left: 35vw;
+    font-family: 'Rubik One', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    background: #2E2F45;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 7px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+  }
 
-/* Картинка и текст для школы */
+  /* Картинка и текст для школы */
 
 .school{
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  left: 7vw;
-  top: 120vh;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    left: 7vw;
+    top: 120vh;
 }
 .school_txt{
-  position: absolute;
-  top: 40vh;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 550;
-  padding: 20px;
-  letter-spacing: 0.2em;
-  border: 3px solid;
-  border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
-  border-image-slice: 1;
-  font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 37vh;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 550;
+    padding: 20px;
+    letter-spacing: 0.2em;
+    border: 3px solid;
+    border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
+    border-image-slice: 1;
+    font-family: 'Courier New', Courier, monospace;
 }
-
+  
 /* Картинка и текст для академии */
-
+  
 .academy{
-  position: absolute;
-  height: 450px;
-  width: 450px;
-  left: 37vw;
-  top: 120vh;
+    position: absolute;
+    height: 400;
+    width: 450px;
+    left: 37vw;
+    top: 120vh;
 }
 .academy_txt{
-  position: absolute;
-  top: 45vh;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 550;
-  padding: 20px;
-  letter-spacing: 0.2em;
-  border: 3px solid;
-  border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
-  border-image-slice: 1;
-  font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 550;
+    padding: 20px;
+    letter-spacing: 0.2em;
+    border: 3px solid;
+    border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
+    border-image-slice: 1;
+    font-family: 'Courier New', Courier, monospace;
 }
-
+  
 /* Картинка и текст для универа */
-
+  
 .university{
-  position: absolute;
-  height: 450px;
-  width: 450px;
-  left: 70vw;
-  top: 120vh;
+    position: absolute;
+    height: 400px;
+    width: 450px;
+    left: 70vw;
+    top: 120vh;
 }
 .university_txt{
-  position: absolute;
-  top: 45vh;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 550;
-  padding: 20px;
-  letter-spacing: 0.2em;
-  border: 3px solid;
-  border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
-  border-image-slice: 1;
-  font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 42vh;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 550;
+    padding: 20px;
+    letter-spacing: 0.2em;
+    border: 3px solid;
+    border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
+    border-image-slice: 1;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-
-body {
-  background: #d6eaf8;
-}
-
+  
 /* Кнопка к школе */
-
+  
 .school_button {
-  position:absolute;
-  top: 175vh;
-  left: 11vw; 
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  padding: 20px 30px;
-  margin: 10px 20px;
-  border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
-  background-size: 200% auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  transition: .5s;
+    position:absolute;
+    top: 174vh;
+    left: 11vw; 
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
 }
 .school_button:hover {
-  background-position: right center;
+    background-position: right center;
 }
-
+  
 /* Кнопка к академии */
-
+  
 .academy_button {
-  position:absolute;
-  top: 188vh;
-  left: 43vw;
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  padding: 20px 30px;
-  margin: 10px 20px;
-  border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
-  background-size: 200% auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  transition: .5s;
+    position:absolute;
+    top: 176vh;
+    left: 43vw;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
 }
 .academy_button:hover {
-  background-position: right center;
+    background-position: right center;
 }
-
+  
 /* Кнопка к универу */
-
+  
 .university_button {
-  position:absolute;
-  top: 183vh;
-  left: 75vw; 
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  padding: 20px 30px;
-  margin: 10px 20px;
-  border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
-  background-size: 200% auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  transition: .5s;
+    position:absolute;
+    top: 182vh;
+    left: 75vw; 
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #042ea1 0%, #0edbaf 51%, #042ea1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
 }
 .university_button:hover {
-  background-position: right center;
+    background-position: right center;
+}
+  
+
+  /* Кнопка навигации вверх */
+
+.top_button{
+  position: fixed;
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  padding: 10px;
+  bottom: 11vh;
+  right: 1vw;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  border: 3px solid ;
+  background: linear-gradient(135deg, #5280e4 20%, #091a49 70%);
+  border-image: linear-gradient(135deg, #091a49 20%, #5280e4 70%);
+  border-image-slice: 1;
+  z-index: 100;
+}
+
+/* Кнопка навигации вниз */
+
+.bottom_button{
+  position: fixed;
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  padding: 10px;
+  bottom: 4vh;
+  right: 1vw;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  border: 3px solid ;
+  background: linear-gradient(135deg, #5280e4 20%, #091a49 70%);
+  border-image: linear-gradient(135deg, #091a49 20%, #5280e4 70%);
+  border-image-slice: 1;
+  z-index: 100;
 }
 
 /* Текст к разделу Contacts */
 
 .txt_contacts{
-  position: relative;
-  top: -100vh;
-  left: 0vw;
-  font-family: 'Rubik One', sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  background: #2E2F45;
-  display: table;
-  margin: 20px auto;
-  color: white;
-  border-radius: 7px;
-  mix-blend-mode: multiply;
-  padding: 5px 10px;
-}
-
-.txt_contacts1{
-  position: relative;
-  top: -101vh;
-  left: 0vw;
-  font-family: 'Rubik One', sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  background: #2E2F45;
-  display: table;
-  margin: 20px auto;
-  color: white;
-  border-radius: 7px;
-  mix-blend-mode: multiply;
-  padding: 5px 10px;
-}
-
-/* Текст footer'a */
-
-.copyright_text{
-  position: relative;
-  width: 455px;
-  height: 28px;
-  left: 733px;
-  top: -118vh;
-  text-align: center;
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-/* Телефон */
-
-.tel{
-  position: relative;
-  width: 100vw;
-  left: 9vw; 
-  top: -80vh;
-  margin-top: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 45px;
-  text-align: center;
-  color: #FFFFFF;
-  z-index: 10;
-}
-
-/* Иконка телефона */
-
-.icon_phone{
-  position: relative;
-  font-size: 14px;
-  width: 40px;
-  height: 40px;
-  left: 51vw;
-  top: -86.5vh;
-  margin-top: 0%;
-  z-index: 10;
-}
-
-/* Почта */
-
-.email{
-  position: relative;
-  width: 100vw;
-  height: 134px;
-  left: 53.5vw; 
-  top: -80vh;
-  margin-top: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 45px;
-  text-align: center;
-  color: #FFFFFF;
-  z-index: 10;
-}
-
-/* Иконка почты */
-
-.icon_mail{
-  position: relative;
-  font-size: 14px;
-  width: 40px;
-  height: 40px;
-  left: 51vw;
-  top: -84.5vh;
-  margin-top: 0%;
-  z-index: 10;
-}
-
-/* Адрес */
-
-.adress{
-  position: relative;
-  width: 100vw;
-  height: 133px;
-  left: 13vw; 
-  top: -80vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 45px;
-  text-align: center;
-  color: #FFFFFF;
-  z-index: 10;
-
-}
-
-/* Иконка адреса */
-
-.icon_adress{
-  position: relative;
-  font-size: 14px;
-  width: 40px;
-  height: 40px;
-  left: 51vw;
-  top: -96vh;
-  margin-top: 0%;
-  z-index: 10;
-}
+    position: absolute;
+    top: -100vh;
+    left: 10vw;
+    font-family: Tahoma;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  .txt_contacts1{
+    position: absolute;
+    top: -95vh;
+    left: 0vw;
+    font-family: Tahoma;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  /* Телефон */
+  
+  .tel{
+    position: absolute;
+    width: 100vw;
+    left: -21vw; 
+    top: -70vh;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 10;
+  }
+  
+  /* Иконка телефона */
+  
+  .icon_phone{
+    position: absolute;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    left: 20vw;
+    top: -70vh;
+    margin-top: 0%;
+    z-index: 10;
+  }
+  
+  /* Почта */
+  
+  .email{
+    position: absolute;
+    width: 100vw;
+    height: 134px;
+    left: -19vw; 
+    top: -60vh;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 10;
+  }
+  
+  /* Иконка почты */
+  
+  .icon_mail{
+    position: absolute;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    left: 20vw;
+    top: -60vh;
+    margin-top: 0%;
+    z-index: 10;
+  }
+  
+  /* Адрес */
+  
+  .adress{
+    position: absolute;
+    width: 100vw;
+    height: 133px;
+    left: -17vw; 
+    top: -50vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 10;
+  
+  }
+  
+  /* Иконка адреса */
+  
+  .icon_adress{
+    position: absolute;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    left: 20vw;
+    top: -50vh;
+    margin-top: 0%;
+    z-index: 10;
+  }
 
 /* Кнопка feedback'a */
 
 .form_post {
-  position: relative;
-  top: -130vh;
-  left: -20vw; 
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  padding: 20px 30px;
-  margin: 10px 20px;
-  border-radius: 10px;
-  font-family:'Times New Roman', Times, serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-image: linear-gradient(to right, #810e9e 0%, #234a7c 51%, #810e9e 100%);
-  background-size: 200% auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  transition: .5s;
-}
+    position: absolute;
+    top: -30vh;
+    left: -20vw; 
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #810e9e 0%, #234a7c 51%, #810e9e 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+  }
 
-/* Googla map */
+/* Google map */
 
 .google_map{
-  position: relative;
-  border:0; 
-  top: -135vh;
-  left: 2vw;
-  border: 3px solid black
+    position: absolute;
+    z-index: 15;
+    border:0; 
+    top: -80vh;
+    left: -30vw;
+    border: 5px solid #091a49;
 }
 
+.copyright_text{
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
 
+footer{
+    background-color: rgb(17, 4, 87);
+}
+
+input{display: none;}
+
+.carusel{
+    position: absolute;
+    top: -180vh;
+    left: -30vw;
+    max-width: 450px;
+    height: 450px;
+    max-height: 100vh;
+    margin: 20px auto;
+    overflow: hidden;
+    user-select: none;
+}
+
+.carusel__item {
+    position: absolute; 
+    z-index: 1;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: center no-repeat;
+    background-size: contain;
+    transition: left 0.5s, transform 0.5s;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.carusel__arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    color: #fff;
+    background-color: #999;
+    cursor: pointer;
+    padding: 10px; 
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: bold;
+}
+
+input:checked+div~div~div~div .carusel__item {background-image: none}
+input:checked+div *, input:checked+div+input+div .carusel__item, input:checked+div+input+div+input+div * {display: block;}
+
+input:checked+div .carusel__item {left: -100%; transform: scale(0.4);}
+input:checked+div+input+div .carusel__item {left: 0; transform: scale(1);}
+input:checked+div+input+div+input+div .carusel__item {left: 100%; transform: scale(0.4);}
+
+input:checked+div .carusel__arrow {left: 0;}
+input:checked+div+input+div+input+div .carusel__arrow {right: 0;}
+
+input:checked+div .carusel__arrow:before {content: '❰';}
+input:checked+div+input+div+input+div .carusel__arrow:before{content: '❱';}
