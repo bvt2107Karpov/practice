@@ -549,10 +549,9 @@ img {
     display: block;
     text-align: center;
     font-family:monospace;
-    top: -4vh;
+    top: -2vh;
     left: -20vw;
 }
-
 
 .terms-of-service{
     position: relative;
@@ -560,7 +559,7 @@ img {
     font-size: 18px;
     display: block;
     text-align: center;
-    top: -10vh;
+    top: -13vh;
     left: -20vw;
     font-family:monospace;
 }
@@ -616,7 +615,6 @@ img {
   color: #cc0aac;
   transition: all 0.3s ease-in;
 }
-
 
 
 /* input{display: none;}
