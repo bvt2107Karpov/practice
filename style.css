@@ -4,9 +4,9 @@ A {
 } 
 
 A:hover { 
-    text-decoration: underline;
-    color: rgb(13, 167, 206);
+    color: rgb(90, 137, 199);
 }
+
 
 /* скроллбар */
 ::-webkit-scrollbar {
@@ -539,26 +539,30 @@ img {
     font-size: 18px;
     top: -2vh;
     text-align: center;
+    font-family:monospace;
 }
 
 .privacy-policy{
     position: relative;
     width: 100%;
     font-size: 18px;
-    display: inline-block;
+    display: block;
     text-align: center;
+    font-family:monospace;
     top: -4vh;
     left: -20vw;
 }
+
 
 .terms-of-service{
     position: relative;
     width: 100%;
     font-size: 18px;
-    display: inline-block;
+    display: block;
     text-align: center;
     top: -10vh;
     left: -20vw;
+    font-family:monospace;
 }
 
 .social-icons{
@@ -566,6 +570,7 @@ img {
   list-style: none;
   margin: 10px;
 }
+
 .social-icons li{
   display: inline-block;
   position: relative;
@@ -573,8 +578,8 @@ img {
   top: 5vh;
   left: 67.5vw;
 }
-.social-icons i,
-.social-icons img{
+
+.social-icons i, .social-icons img{
   color: #fff;
   position: absolute;
   top: 18px;
@@ -584,9 +589,11 @@ img {
   text-align:center;
   transition: all 0.3s ease-out;
 }
+
 .social-icons a{
   display: inline-block;
 }
+
 .social-icons a:before{
   transform: scale(1);
   content: "";
@@ -598,12 +605,13 @@ img {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.2);
   transition: all 0.3s ease-out;
 }
+
 .social-icons a:hover:before{
   transform: scale(0);
   transition: all 0.3s ease-in;
 }
-.social-icons a:hover i,
-.social-icons a:hover img{
+
+.social-icons a:hover i, .social-icons a:hover img{
   transform: scale(1.8);
   color: #cc0aac;
   transition: all 0.3s ease-in;
