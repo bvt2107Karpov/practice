@@ -28,7 +28,8 @@ A:hover {
   /* Стрелки */
   
   ::-webkit-scrollbar-button:vertical:start:decrement {
-    background: linear-gradient(120deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
+    background: 
+        linear-gradient(120deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
         linear-gradient(240deg, #195292 40%, rgba(0, 0, 0, 0) 41%),
         linear-gradient(0deg, #195292 30%, rgba(0, 0, 0, 0) 31%);
     background-color: #1d0f6e;
@@ -239,7 +240,7 @@ img {
     border: 3px solid;
     border-image: linear-gradient(20deg, #0edbaf 38%, #1c06e0 65%);
     border-image-slice: 1;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
   
 /* Картинка и текст для универа */
@@ -585,7 +586,7 @@ img {
   left: 18px;
   width: 24px;
   height: 24px;
-  text-align:center;
+  text-align: center;
   transition: all 0.3s ease-out;
 }
 
@@ -615,62 +616,3 @@ img {
   color: #cc0aac;
   transition: all 0.3s ease-in;
 }
-
-
-/* input{display: none;}
-
-.carusel{
-    position: absolute;
-    top: -180vh;
-    left: -30vw;
-    max-width: 450px;
-    height: 450px;
-    max-height: 100vh;
-    margin: 20px auto;
-    overflow: hidden;
-    user-select: none;
-
-}
-
-.carusel__item {
-    position: absolute; 
-    z-index: 1;
-    top: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: center no-repeat;
-    background-size: contain;
-    transition: left 0.5s, transform 0.5s;
-    will-change: transform;
-    backface-visibility: hidden;
-}
-
-.carusel__arrow {
-    display: none;
-    position: absolute;
-    top: 50%;
-    z-index: 3;
-    transform: translateY(-50%);
-    opacity: 0.7;
-    color: #fff;
-    background-color: #999;
-    cursor: pointer;
-    padding: 10px; 
-    font-size: 28px;
-    line-height: 39px;
-    font-weight: bold;
-}
-
-input:checked+div~div~div~div .carusel__item {background-image: none}
-input:checked+div *, input:checked+div+input+div .carusel__item, input:checked+div+input+div+input+div * {display: block;}
-
-input:checked+div .carusel__item {left: -100%; transform: scale(0.4);}
-input:checked+div+input+div .carusel__item {left: 0; transform: scale(1);}
-input:checked+div+input+div+input+div .carusel__item {left: 100%; transform: scale(0.4);}
-
-input:checked+div .carusel__arrow {left: 0;}
-input:checked+div+input+div+input+div .carusel__arrow {right: 0;}
-
-input:checked+div .carusel__arrow:before {content: '❰';}
-input:checked+div+input+div+input+div .carusel__arrow:before{content: '❱';} */
