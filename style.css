@@ -97,14 +97,6 @@ div.background_l2 {
     z-index: -2;
 }
 
-div.background_l3 {
-    position: relative;
-    top: -1vh;
-    right: 100%;
-    width: 295.5%;
-    height: 100vh;
-    z-index: -3;
-}
 
 div.background_l4 {
     position: relative;
@@ -294,7 +286,7 @@ img {
   
 .academy_button {
     position:absolute;
-    top: 176vh;
+    top: 170vh;
     left: 43vw;
     text-decoration: none;
     display: inline-block;
@@ -314,7 +306,7 @@ img {
     background-position: right center;
 }
   
-/* Кнопка к универу */
+/* Кнопка к университету */
   
 .university_button {
     position:absolute;
@@ -392,6 +384,7 @@ img {
     margin: 20px auto;
     color: white;
     padding: 5px 10px;
+    z-index: 100;
   }
   
   .txt_contacts1{
